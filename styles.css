@@ -917,15 +917,21 @@ a {
     min-width: 4rem;
   }
 
-  .story__photos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-sm);
-  }
+.story__photos {
+  display: flex;
+  justify-content: center;
+}
 
-  .story__photo-item img {
-    aspect-ratio: 3 / 2;
-  }
+.story__photo-item {
+  width: 100%;
+  max-width: 520px;
+}
+
+.story__photo-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
   .gallery__grid {
     gap: 3px;
