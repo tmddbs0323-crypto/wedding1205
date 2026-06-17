@@ -924,7 +924,8 @@ a {
 
 .story__photo-item {
   width: 100%;
-  max-width: 520px;
+  height: auto;
+  object-fit: contain;
 }
 
 .story__photo-item img {
