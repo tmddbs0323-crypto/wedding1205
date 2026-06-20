@@ -203,8 +203,10 @@
 
   function initGreeting() {
     $('#greetingTitle').textContent = CONFIG.greeting.title;
-    $('#greetingContent').textContent = CONFIG.greeting.content;
-
+    $('#greetingContent').innerHTML = `
+<div class="greeting__poem">${CONFIG.greeting.poem}</div>
+<div class="greeting__body">${CONFIG.greeting.content}</div>
+`;
     const g = CONFIG.groom;
     const b = CONFIG.bride;
 
