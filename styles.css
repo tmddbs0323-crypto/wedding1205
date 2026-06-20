@@ -440,6 +440,20 @@ a {
   opacity: 0.6;
 }
 
+.greeting__poem {
+  font-size: 0.82rem;
+  line-height: 2.2;
+  color: #999;
+  white-space: pre-line;
+  margin-bottom: 3rem;
+}
+
+.greeting__body {
+  font-size: 0.95rem;
+  line-height: 2;
+  white-space: pre-line;
+}
+
 /* ═══════════════════════════════════════════
    Story Section
    ═══════════════════════════════════════════ */
