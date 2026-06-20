@@ -508,7 +508,25 @@ a {
 .gallery__item:hover img {
   opacity: 0.9;
 }
+/* Story 사진 2장 가로 병렬 고정 */
+.story__photos {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
 
+.story__photo-item {
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.story__photo-item img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
 /* ═══════════════════════════════════════════
    Location Section
    ═══════════════════════════════════════════ */
