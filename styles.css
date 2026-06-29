@@ -1026,3 +1026,40 @@ a {
   object-fit: contain !important;
   display: block !important;
 }
+
+.location-notice{
+    margin:50px 24px 10px;
+}
+
+.notice-box{
+    padding:26px 22px;
+    margin-bottom:20px;
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.04);
+}
+
+.notice-icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.notice-title{
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:12px;
+}
+
+.notice-content{
+    font-size:15px;
+    line-height:1.9;
+    color:#666;
+}
+
+.notice-content b{
+    color:#222;
+    font-weight:600;
+}
