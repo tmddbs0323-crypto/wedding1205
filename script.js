@@ -672,4 +672,4 @@ notice.innerHTML = `
     </div>
 `;
 
-$('#location').appendChild(notice);
+document.querySelector('#naverMapBtn').parentElement.insertAdjacentElement('afterend', notice);
