@@ -1041,18 +1041,18 @@ a {
 }
 
 .notice-icon{
-    font-size:20px;   /* 기존 30px → 20px */
+    font-size:15px;   /* 기존 30px → 20px */
     margin-bottom:8px;
 }
 
 .notice-title{
-    font-size:17px;
+    font-size:14px;
     font-weight:600;
     margin-bottom:8px;
 }
 
 .notice-content{
-    font-size:14px;
+    font-size:12px;
     line-height:1.65;
     color:#666;
 }
