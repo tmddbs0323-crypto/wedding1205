@@ -1028,34 +1028,32 @@ a {
 }
 
 .location-notice{
-    margin:50px 24px 10px;
+    margin:28px 24px 10px;
 }
 
 .notice-box{
-    padding:26px 22px;
-    margin-bottom:20px;
+    padding:18px 18px;
+    margin-bottom:12px;
     background:#fff;
     border:1px solid #ececec;
-    border-radius:14px;
-    text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,.04);
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
 }
 
 .notice-icon{
-    font-size:30px;
-    margin-bottom:12px;
+    font-size:20px;   /* 기존 30px → 20px */
+    margin-bottom:8px;
 }
 
 .notice-title{
-    font-size:18px;
+    font-size:17px;
     font-weight:600;
-    color:#222;
-    margin-bottom:12px;
+    margin-bottom:8px;
 }
 
 .notice-content{
-    font-size:15px;
-    line-height:1.9;
+    font-size:14px;
+    line-height:1.65;
     color:#666;
 }
 
