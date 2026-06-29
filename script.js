@@ -636,3 +636,40 @@
     init();
   }
 })();
+
+// 안내사항 추가
+const notice = document.createElement('div');
+notice.className = 'location-notice';
+
+notice.innerHTML = `
+    <div class="notice-box">
+        <div class="notice-icon">💗</div>
+        <div class="notice-title">신부대기실 안내</div>
+        <div class="notice-content">
+            신부 대기실은 <b>홀 입구 바로 맞은편에 </b><br>
+            위치해 있습니다.
+        </div>
+    </div>
+
+    <div class="notice-box">
+        <div class="notice-icon">🍰</div>
+        <div class="notice-title">식사 안내</div>
+        <div class="notice-content">
+            식사는 <b>35층 연회장</b>에서<br>
+            뷔페식으로 진행됩니다.
+        </div>
+    </div>
+
+    <div class="notice-box">
+        <div class="notice-icon">☕️</div>
+        <div class="notice-title">휴게공간 안내</div>
+        <div class="notice-content">
+            비상계단을 통해 <b>36층</b>으로 올라가시면<br>
+            예식 전후 잠시 앉아서 쉬실 수 있는<br>
+            쇼파와 의자,<br>
+            그리고 따뜻한 커피가 마련되어 있습니다.
+        </div>
+    </div>
+`;
+
+$('#location').appendChild(notice);
