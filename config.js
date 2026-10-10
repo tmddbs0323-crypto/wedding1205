@@ -63,15 +63,16 @@ const CONFIG = {
   // ── 오시는 길 ──
   // (mapLinks는 wedding 객체 내에 포함)
 
-  // ── 마음 전하실 곳 ──
+   // ── 마음 전하실 곳 ──
   accounts: {
     groom: [
-      { role: "신랑", name: "심지훈", bank: "국민은행", number: "404602-01-369095" },{ role: "신랑母", name: "김정남", bank: "국민은행", number: "424002-01-229660" }
+      { role: "신랑", name: "심지훈", bank: "국민은행", number: "404602-01-369095" },
+      { role: "신랑母", name: "김정남", bank: "국민은행", number: "424002-01-229660" }
     ],
     bride: [
-      { role: "신부", name: "이승윤", bank: "신한은행", number: "110-468-410984" },{ role: "신부父", name: "이동철", bank: "농협은행", number: "352-0799-9556-53" }
+      { role: "신부", name: "이승윤", bank: "신한은행", number: "110-468-410984" },
+      { role: "신부父", name: "이동철", bank: "농협은행", number: "352-0799-9556-53" }
     ],
- // 전화번호
     phones: {
       groom: "010-7186-2847",
       bride: "010-5523-6243"
