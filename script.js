@@ -1,4 +1,4 @@
-/**
+  /**
  * Simple & Clean Wedding Invitation
  * Korean Mobile 청첩장 - Script
  */
@@ -515,21 +515,73 @@
     });
   }
 
-  function initAccounts() {
+ function initAccounts() {
     renderAccounts(CONFIG.accounts.groom, 'groomAccountList');
     renderAccounts(CONFIG.accounts.bride, 'brideAccountList');
+
+    // 전화번호를 계좌 목록 맨 아래에 추가
+    renderContact(
+      'groomAccountList',
+      '신랑 연락처',
+      CONFIG.accounts.phones.groom
+    );
+
+    renderContact(
+      'brideAccountList',
+      '신부 연락처',
+      CONFIG.accounts.phones.bride
+    );
 
     initAccordion('groomAccordion', 'groomAccordionPanel');
     initAccordion('brideAccordion', 'brideAccordionPanel');
 
-    // Copy account delegates
+    // 계좌번호 및 전화번호 복사
     document.addEventListener('click', (e) => {
       const btn = e.target.closest('.account-item__copy');
       if (!btn) return;
+
       const text = btn.dataset.account;
-      copyToClipboard(text, '계좌번호가 복사되었습니다');
+      const message = btn.dataset.copyMessage || '복사되었습니다';
+
+      copyToClipboard(text, message);
     });
   }
+
+
+// 전화번호 항목 생성
+function renderContact(listId, label, phone) {
+    const list = document.getElementById(listId);
+    if (!list || !phone) return;
+
+    const item = document.createElement('div');
+    item.className = 'account-item';
+
+    const info = document.createElement('div');
+    info.className = 'account-item__info';
+
+    const role = document.createElement('span');
+    role.className = 'account-item__role';
+    role.textContent = label;
+
+    const number = document.createElement('div');
+    number.className = 'account-item__number';
+    number.textContent = phone;
+
+    const copyBtn = document.createElement('button');
+    copyBtn.type = 'button';
+    copyBtn.className = 'account-item__copy';
+    copyBtn.textContent = '복사';
+    copyBtn.dataset.account = phone;
+    copyBtn.dataset.copyMessage = '전화번호가 복사되었습니다';
+
+    info.appendChild(role);
+    info.appendChild(number);
+
+    item.appendChild(info);
+    item.appendChild(copyBtn);
+
+    list.appendChild(item);
+}
 
   /* ═══════════════════════════════════════════
      Footer
