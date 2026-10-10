@@ -70,7 +70,7 @@ const CONFIG = {
     ],
     bride: [
       { role: "신부", name: "이승윤", bank: "신한은행", number: "110-468-410984" },{ role: "신부父", name: "이동철", bank: "농협은행", number: "352-0799-9556-53" }
-    ]
+    ],
  // 전화번호
     phones: {
       groom: "010-7186-2847",
