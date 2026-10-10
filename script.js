@@ -556,29 +556,20 @@ function renderContact(listId, label, phone) {
     const item = document.createElement('div');
     item.className = 'account-item';
 
-    const info = document.createElement('div');
-    info.className = 'account-item__info';
-
-    const role = document.createElement('span');
-    role.className = 'account-item__role';
-    role.textContent = label;
-
-    const number = document.createElement('div');
-    number.className = 'account-item__number';
-    number.textContent = phone;
-
-    const copyBtn = document.createElement('button');
-    copyBtn.type = 'button';
-    copyBtn.className = 'account-item__copy';
-    copyBtn.textContent = '복사';
-    copyBtn.dataset.account = phone;
-    copyBtn.dataset.copyMessage = '전화번호가 복사되었습니다';
-
-    info.appendChild(role);
-    info.appendChild(number);
-
-    item.appendChild(info);
-    item.appendChild(copyBtn);
+    item.innerHTML = `
+      <div class="account-item__info">
+        <div class="account-item__role">${label}</div>
+        <div class="account-item__detail">${phone}</div>
+      </div>
+      <button
+        type="button"
+        class="account-item__copy"
+        data-account="${phone}"
+        data-copy-message="전화번호가 복사되었습니다"
+      >
+        복사
+      </button>
+    `;
 
     list.appendChild(item);
 }
